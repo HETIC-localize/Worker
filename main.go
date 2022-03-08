@@ -40,7 +40,7 @@ func main() {
 
 		Utility.DumpTranslation(translation)
 
-		UseCase.StoreTranslation(translation)
+		UseCase.SendTranslationToBackend(translation)
 
 		fmt.Println("* Terminate task")
 	}
