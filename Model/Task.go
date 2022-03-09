@@ -2,7 +2,7 @@ package Model
 
 type Task struct {
 
-	ID string
+	Key string
 	Src string
 	Val string
 }

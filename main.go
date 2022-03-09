@@ -26,7 +26,7 @@ func main() {
 
 		translation := Model.Translation{Items: make(map[string]string)}
 
-		translation.ID = task.ID
+		translation.Code = task.Key
 		translation.Items[task.Src] = task.Val
 
 		for _, lang := range Config.Lang() {

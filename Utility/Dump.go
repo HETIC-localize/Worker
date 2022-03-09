@@ -7,7 +7,7 @@ import (
 
 func DumpTranslation(translation Model.Translation)  {
 
-	fmt.Println("ID :", translation.ID)
+	fmt.Println("Code :", translation.Code)
 	for lang, text := range translation.Items {
 		fmt.Println(lang, ":" , text)
 	}

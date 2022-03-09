@@ -28,7 +28,7 @@ func StoragePersistTranslation(translation Model.Translation) {
 
 	for lang, text := range translation.Items {
 
-		_, err := db.Query("UPDATE `translation` SET `value` = '" + text + "' WHERE country = '" + lang + "' AND uuid = '" + translation.ID + "'")
+		_, err := db.Query("UPDATE `translation` SET `value` = '" + text + "' WHERE country = '" + lang + "' AND code = '" + translation.Code + "'")
 
 		if err != nil {
 			panic(err.Error())

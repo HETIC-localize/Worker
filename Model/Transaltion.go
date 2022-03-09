@@ -2,6 +2,6 @@ package Model
 
 type Translation struct {
 
-	ID string
+	Code  string
 	Items map[string]string
 }
