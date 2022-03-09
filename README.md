@@ -3,6 +3,7 @@
 ### Requirements
 
 - go ^1.15
+- mysql ^8.0
 
 ### Tools
 
